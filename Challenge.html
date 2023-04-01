@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Challenge.css">
+    </head>
+    <body class="contenido">
+        <header>
+            <img src="Logo.png" alt="logo de alura" class="logo__alura">
+        </header>
+        <section>
+            <textarea class="texto__ingresado" type="text" id="texto__encriptado" placeholder="Ingrese el texto aqui."></textarea> 
+            <div>
+                <h1 class="informacion">Solo letras minúsculas y sin acentos.</h1>
+            </div>
+            <div class="botonesEnDes">
+                <button data-ocultar-elementos class="boton__encriptar" type="button" id="boton__encriptado">Encriptar</button>
+                <button data-mostrar-elementos class="boton__desencriptar" type="button" id="boton__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mensaje">
+            <div class="imagen" id="ocultarElemen" >
+                <img class="muneco" src="/Muñeco.png" alt="No se ha encotrado imagen" >
+                <p class="mensaje__ninguno">Ningún mensaje fue <br> encontrado. </p>
+                <p class="ingreseTex">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea class="no_mensaje" name="Resultado" id="texto__desencriptado" cols="20" rows="2"></textarea>
+            <div class="boton_cop_peg">
+                <button class="boton__copiar" type="button" id="boton__copiar">Copiar</button>
+            </div>
+        </section>
+        
+        <script src="/Challenge.js"></script>
+        
+    </body>
+</html>
